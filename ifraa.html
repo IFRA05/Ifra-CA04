@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Difference - Home</title>
+    <!-- Link to Google Fonts for 'Inter' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #00205b;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex; /* Added to align logo image and text */
+            align-items: center; /* Added to vertically center logo image and text */
+            gap: 10px; /* Space between logo image and text */
+        }
+
+        /* Style for the logo image */
+        .logo img {
+            height: 40px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Slightly rounded corners for the logo */
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ffcb05;
+        }
+
+        /* Hero */
+        #hero {
+            /* Using a placeholder image for the hero section */
+            background: url('https://icst.edu.lk/wp-content/uploads/2023/12/DSC099931-scaled.jpg') no-repeat center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffcb05;
+            color: #00205b;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #ffd633;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #00205b;
+            margin-bottom: 30px;
+        }
+
+        .section p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Specific style for the contact section background and text color */
+        #contact {
+            background: url('https://icst.edu.lk/wp-content/uploads/elementor/thumbs/DSC099861-scaled-qgs9y6fr3w676nmdz6qyqj4qv9kgsxbwcpkqwuhi10.jpg') no-repeat center/cover; /* Placeholder background image */
+            color: white; /* Change text color to white for better contrast */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Add text shadow for readability */
+        }
+
+        #contact h2 {
+            color: white; /* Ensure heading is white */
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Style for the images within the cards */
+        .card img {
+            width: 100%; /* Make image responsive within the card */
+            height: 150px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area, cropping if necessary */
+            border-radius: 8px; /* Rounded corners for images */
+            margin-bottom: 15px; /* Space between image and text */
+        }
+
+        .card h3 {
+            color: #00205b;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #00205b;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Placeholder logo image -->
+                <img src="https://tse2.mm.bing.net/th/id/OIP.vGsCZ6JH5K2JpIkKKLOwagHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Make a Difference Logo">
+                International Campus Of Science And Technology
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#causes">Our Causes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Empowering Communities, Changing Lives</h2>
+                <p>Join us in our mission to create a positive impact on the world. Every small step counts!</p>
+                <a href="#causes" class="btn">Discover Our Causes</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At the International Campus of Science and Technology (ICST), we are dedicated to fostering a vibrant academic community where innovation thrives and future leaders are shaped. Our commitment is to provide an exceptional learning experience that combines rigorous academics with practical application, preparing students for success in a rapidly evolving global landscape.</p>
+            </div>
+        </section>
+
+        <section id="causes" class="section">
+            <div class="container">
+                <h2>Our Causes</h2>
+                <p>No matter the challenges to come, we will remain connected through our core values</p>
+                <div class="cards">
+                    <div class="card">
+                        <!-- Image for Education for All -->
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.xivHLIi4rlFTHRSrQCLWqAHaEO?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Children studying in a classroom">
+                        <h3>BAIT</h3>
+                        <p>Success is the sum of small efforts, repeated day in and day out</p>
+                    </div>
+                    <div class="card">
+                        <!-- Image for Clean Water Initiatives -->
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.LsgNS7rXMwT5AIB9aur9nQHaEc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Clean water flowing from a tap">
+                        <h3>ACCA</h3>
+                        <p>Success is not final, failure is not fatal: it’s the courage to continue that counts</p>
+                    </div>
+                    <div class="card">
+                        <!-- Image for Healthcare Access -->
+                        <img src="https://img.freepik.com/premium-photo/mastering-digital-ecosystem_1029473-235448.jpg" alt="Medical professional helping a patient">
+                        <h3>HDIT</h3>
+                        <p>Success is a journey, not a destination</p>
+                    </div>
+                    <div class="card">
+                        <!-- Image for Environmental Protection -->
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.hUNg0hdywRauUgmwYYPDDwHaE7?r=0&w=1024&h=682&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Trees being planted in a green field">
+                        <h3>HDQS</h3>
+                        <p>Success is not a destination, it’s a journey, and training is the first step</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>ICST, University Park</p>
+                <p>Email: admissions@icst.edu.lk</p>
+                <p>Phone: +94 74 3444 444</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; International Campus of Science and Technology. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
